@@ -486,11 +486,10 @@ header.scrolled {
 .our-menu .item-wrapper .item-left h5 {
   color: var(--text-color);
   margin-bottom: 2px;
-  font-size: 1.35rem;
 }
 
 .our-menu .item-wrapper .item-left p {
-  font-size: 15px;
+  font-size: 14px;
   padding-top: 4px;
   color: #6b6b6b;
   margin-bottom: 0;
