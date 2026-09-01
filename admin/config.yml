@@ -35,13 +35,15 @@ collections:
               - { label: "Kategori Adı", name: "name", widget: "string" }
               - { label: "İkon", name: "icon", widget: "string" }
               - { label: "Fotoğraf", name: "image", widget: "image" }
+              - { label: "Kategori Notu", name: "note", widget: "string", required: false }
               - label: "Ürünler"
                 name: "items"
                 widget: "list"
                 fields:
                   - { label: "Ürün Adı", name: "name", widget: "string" }
-                  - { label: "Açıklama", name: "description", widget: "text" }
+                  - { label: "Açıklama", name: "description", widget: "text", required: false }
                   - { label: "Fiyat ₺", name: "price", widget: "number" }
+                  - { label: "Yarım Porsiyon Fiyatı ₺", name: "priceHalf", widget: "number", required: false }
                   - { label: "Özel Etiket", name: "featuredLabel", widget: "string", required: false }
 
           - label: "Çalışma Saatleri"

@@ -1,9 +1,9 @@
 {
   "restaurant": {
     "name": "AYDOĞDU LOKANTASI",
-    "sinceBadge": "1990'dan Beri",
+    "sinceBadge": "1987'dan Beri",
     "tagline": "Bostancı'nın Geleneksel Lezzet Durağı",
-    "description": "1990'dan beri Bostancı Oto Sanayi'de taze günlük malzemelerle hazırladığımız ev yemekleri, döner çeşitleri ve yöresel tatlılarımızla hizmetinizdeyiz.",
+    "description": "1987'dan beri Bostancı Oto Sanayi'de taze günlük malzemelerle hazırladığımız ev yemekleri, döner çeşitleri ve yöresel tatlılarımızla hizmetinizdeyiz.",
     "ctaMenu": "Menüyü Keşfet",
     "phone": "+90 (555) 123 45 67",
     "heroVideoDesktop": "./assets/video/hero.mp4",
@@ -11,152 +11,171 @@
   },
   "categories": [
     {
-      "id": "corbalar",
-      "name": "Çorbalar",
+      "id": "doner",
+      "name": "Döner",
+      "icon": "fa-utensils",
+      "image": "./doner.jpg",
+      "note": "",
+      "items": [
+        {
+          "name": "Porsiyon",
+          "description": "110 gr",
+          "price": 430,
+          "featuredLabel": ""
+        },
+        {
+          "name": "Pilav Üstü",
+          "description": "110 gr",
+          "price": 490,
+          "featuredLabel": ""
+        },
+        {
+          "name": "1,5 Porsiyon",
+          "description": "150 gr",
+          "price": 590,
+          "featuredLabel": ""
+        },
+        {
+          "name": "Yarım Döner",
+          "description": "70 gr",
+          "price": 290,
+          "featuredLabel": ""
+        },
+        {
+          "name": "Dürüm Döner",
+          "description": "90 gr",
+          "price": 350,
+          "featuredLabel": ""
+        },
+        {
+          "name": "Üç Çeyrek Döner",
+          "description": "90 gr",
+          "price": 350,
+          "featuredLabel": ""
+        }
+      ]
+    },
+    {
+      "id": "gunun-yemekleri",
+      "name": "Günün Yemekleri",
       "icon": "fa-bowl-food",
       "image": "./ana_yemek.jpg",
+      "note": "*Beşamel-kaşarlı yemeklerde 20 ₺ fark uygulanır",
       "items": [
         {
-          "name": "Mercimek Çorbası",
-          "description": "Kırmızı mercimek, havuç ve özel baharatlarla",
-          "price": 45,
-          "featuredLabel": ""
-        },
-        {
-          "name": "Ezogelin Çorbası",
-          "description": "Bulgur, mercimek, pirinç ve nane ile",
-          "price": 50,
-          "featuredLabel": ""
-        },
-        {
-          "name": "Tarhana Çorbası",
-          "description": "Ev yapımı tarhana, tereyağ ve nane ile",
-          "price": 40,
-          "featuredLabel": ""
-        },
-        {
-          "name": "Düğün Çorbası",
-          "description": "Kuzu etli, yumurtalı ve limonlu",
-          "price": 55,
-          "featuredLabel": "Özel Lezzet"
-        },
-        {
-          "name": "Yayla Çorbası",
-          "description": "Yoğurtlu, pirinçli, nane ile",
-          "price": 45,
-          "featuredLabel": ""
-        }
-      ]
-    },
-    {
-      "id": "ana-yemek",
-      "name": "Ana Yemek",
-      "icon": "fa-drumstick-bite",
-      "image": "./ana_yemek.jpg",
-      "items": [
-        {
-          "name": "Kuzu Etli Kuru Fasulye",
-          "description": "Kuru fasulye, kuzu eti, tereyağ ile",
+          "name": "Çorbalar",
+          "description": "Paket servise +10 ₺ ilave edilir",
           "price": 120,
-          "featuredLabel": "Günün Yemeği"
-        },
-        {
-          "name": "Patlıcan Musakka",
-          "description": "Kıyma, patlıcan ve sebzelerle fırında",
-          "price": 110,
+          "priceHalf": 90,
           "featuredLabel": ""
         },
         {
-          "name": "Tavuk Şiş",
-          "description": "Özel marine, şişte mangal tadında",
-          "price": 130,
+          "name": "Kelle Paça",
+          "description": "",
+          "price": 280,
+          "priceHalf": 200,
           "featuredLabel": ""
         },
         {
-          "name": "İzmir Köfte",
-          "description": "Fırında köfte, patates ve biber",
-          "price": 100,
+          "name": "İşkembe",
+          "description": "",
+          "price": 250,
+          "priceHalf": 180,
           "featuredLabel": ""
         },
         {
-          "name": "Karnıyarık",
-          "description": "Kıymalı fırın patlıcan, pilav ile",
-          "price": 110,
+          "name": "Sade Et Yemekleri",
+          "description": "",
+          "price": 390,
+          "priceHalf": 280,
+          "featuredLabel": ""
+        },
+        {
+          "name": "Sebzeli Et Yemekleri",
+          "description": "",
+          "price": 330,
+          "priceHalf": 220,
+          "featuredLabel": ""
+        },
+        {
+          "name": "Köfte Yemekleri",
+          "description": "",
+          "price": 300,
+          "priceHalf": 220,
+          "featuredLabel": ""
+        },
+        {
+          "name": "Tavuk Yemekleri",
+          "description": "",
+          "price": 290,
+          "priceHalf": 200,
+          "featuredLabel": ""
+        },
+        {
+          "name": "Sebze Yemekleri",
+          "description": "",
+          "price": 250,
+          "priceHalf": 180,
+          "featuredLabel": ""
+        },
+        {
+          "name": "Kuru Fasulye / Nohut",
+          "description": "",
+          "price": 210,
+          "priceHalf": 130,
+          "featuredLabel": ""
+        },
+        {
+          "name": "Kıymalı Yemekler",
+          "description": "",
+          "price": 280,
+          "priceHalf": 170,
+          "featuredLabel": ""
+        },
+        {
+          "name": "Dolma Yemekleri",
+          "description": "",
+          "price": 280,
+          "priceHalf": 170,
+          "featuredLabel": ""
+        },
+        {
+          "name": "Pilav – Makarna",
+          "description": "",
+          "price": 120,
+          "priceHalf": 90,
+          "featuredLabel": ""
+        },
+        {
+          "name": "Kuzu İncik",
+          "description": "",
+          "price": 680,
           "featuredLabel": ""
         }
       ]
     },
     {
-      "id": "doner",
-      "name": "Döner Çeşitleri",
-      "icon": "fa-utensils",
-      "image": "./ana_yemek.jpg",
+      "id": "yanindakiler",
+      "name": "Yanındakiler",
+      "icon": "fa-drumstick-bite",
+      "image": "./corba.jpg",
+      "note": "",
       "items": [
         {
-          "name": "Döner Porsiyon",
-          "description": "Bulgur pilavı, salata ile servis",
-          "price": 130,
+          "name": "Salatalar",
+          "description": "",
+          "price": 120,
           "featuredLabel": ""
         },
         {
-          "name": "İskender Döner",
-          "description": "Tereyağlı sos, yoğurt, domates soslu",
-          "price": 170,
-          "featuredLabel": "Şefin Tavsiyesi"
-        },
-        {
-          "name": "Döner Dürüm",
-          "description": "Lavaş ekmeğinde, yeşillik ile",
-          "price": 110,
+          "name": "Yoğurt – Cacık",
+          "description": "",
+          "price": 120,
           "featuredLabel": ""
         },
         {
-          "name": "Karışık Döner Tabak",
-          "description": "Döner, şiş köfte, tavuk şiş bir arada",
-          "price": 180,
-          "featuredLabel": ""
-        },
-        {
-          "name": "Döner Ekmek",
-          "description": "Taze ekmek arası, domates ve turşu ile",
-          "price": 95,
-          "featuredLabel": ""
-        }
-      ]
-    },
-    {
-      "id": "tatlilar",
-      "name": "Tatlılar",
-      "icon": "fa-ice-cream",
-      "image": "./ana_yemek.jpg",
-      "items": [
-        {
-          "name": "Künefe",
-          "description": "Taze kadayıf, peynir ve şerbet ile",
-          "price": 90,
-          "featuredLabel": "En Çok Tercih Edilen"
-        },
-        {
-          "name": "Fırın Sütlaç",
-          "description": "Üzeri kızarmış, geleneksel fırın sütlaç",
-          "price": 60,
-          "featuredLabel": ""
-        },
-        {
-          "name": "Baklava (Porsiyon)",
-          "description": "Cevizli, şerbetli geleneksel tatlı",
-          "price": 80,
-          "featuredLabel": ""
-        },
-        {
-          "name": "İrmik Helvası",
-          "description": "Tereyağlı, çam fıstıklı, sıcak servis",
-          "price": 55,
-          "featuredLabel": ""
-        },
-        {
-          "name": "Kazandibi",
-          "description": "Hafif yanık, sütlü geleneksel tatlı",
+          "name": "Bardak Yoğurt",
+          "description": "",
           "price": 60,
           "featuredLabel": ""
         }
@@ -167,35 +186,45 @@
       "name": "İçecekler",
       "icon": "fa-glass-water",
       "image": "./ana_yemek.jpg",
+      "note": "",
       "items": [
         {
-          "name": "Ayran",
-          "description": "Taze yoğurttan geleneksel içecek",
-          "price": 20,
+          "name": "Meşrubatlar",
+          "description": "",
+          "price": 70,
           "featuredLabel": ""
         },
         {
-          "name": "Şalgam Suyu",
-          "description": "Hafif baharatlı, ferahlatıcı",
-          "price": 25,
-          "featuredLabel": ""
-        },
-        {
-          "name": "Çay",
-          "description": "Taze demlenmiş Türk çayı",
-          "price": 15,
-          "featuredLabel": ""
-        },
-        {
-          "name": "Türk Kahvesi",
-          "description": "Yanında lokum ile",
-          "price": 30,
+          "name": "Açık Ayran – Komposto",
+          "description": "",
+          "price": 70,
           "featuredLabel": ""
         },
         {
           "name": "Su",
-          "description": "İçme suyu 0.5L",
-          "price": 10,
+          "description": "",
+          "price": 20,
+          "featuredLabel": ""
+        },
+        {
+          "name": "Soda",
+          "description": "",
+          "price": 30,
+          "featuredLabel": ""
+        }
+      ]
+    },
+    {
+      "id": "tatlilar",
+      "name": "Tatlılar",
+      "icon": "fa-ice-cream",
+      "image": "./tatli.jpg",
+      "note": "İlave tahin +10 ₺ / fındık-ceviz +10 ₺",
+      "items": [
+        {
+          "name": "Günlük Tatlı",
+          "description": "Günün tatlı çeşitlerinden",
+          "price": 130,
           "featuredLabel": ""
         }
       ]
@@ -235,11 +264,11 @@
     "address": "Huzur Hoca Caddesi No:76, İçerenköy, Ataşehir / İstanbul 34752",
     "mapsUrl": "https://maps.app.goo.gl/VTeGeL5wVci3rUmo6",
     "phone": "+90 (555) 123 45 67",
-    "instagram": "https://www.instagram.com/aydogdulokantasi",
+    "twitter": "",
     "facebook": "",
-    "twitter": ""
+    "instagram": "https://www.instagram.com/aydogdulokantasi"
   },
   "footer": {
-    "about": "AYDOĞDU LOKANTASI, 1990 yılından bu yana Bostancı Oto Sanayi, Ataşehir'de geleneksel esnaf lokantası olarak hizmet vermektedir. Ev yemekleri, döner çeşitleri, yöresel tatlar ve güler yüzlü servis anlayışımızla sizleri ağırlamaktan mutluluk duyarız."
+    "about": "AYDOĞDU LOKANTASI, 1987 yılından bu yana Bostancı Oto Sanayi, Ataşehir'de geleneksel esnaf lokantası olarak hizmet vermektedir. Ev yemekleri, döner çeşitleri, yöresel tatlar ve güler yüzlü servis anlayışımızla sizleri ağırlamaktan mutluluk duyarız."
   }
 }

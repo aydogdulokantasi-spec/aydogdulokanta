@@ -121,6 +121,12 @@
         titleEl.appendChild(document.createTextNode(' ' + cat.name));
       }
 
+      var noteEl = section.querySelector('.category-note');
+      if (noteEl) {
+        setText(noteEl, cat.note || '');
+        noteEl.style.display = cat.note ? '' : 'none';
+      }
+
       var img = section.querySelector('.food-placeholder img');
       if (img && cat.image) {
         img.src = cat.image;
@@ -145,7 +151,15 @@
           }
         }
         if (desc) setText(desc, item.description);
-        if (priceEl) setText(priceEl, item.price + ' ₺');
+        if (priceEl) {
+          var priceText = item.priceHalf ? (item.price + ' / ' + item.priceHalf) : ('' + item.price);
+          priceEl.textContent = '';
+          priceEl.appendChild(document.createTextNode(priceText + ' '));
+          var sym = document.createElement('span');
+          sym.className = 'price-symbol';
+          sym.textContent = '₺';
+          priceEl.appendChild(sym);
+        }
       });
     });
   }
