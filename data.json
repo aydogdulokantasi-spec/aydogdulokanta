@@ -5,7 +5,7 @@
     "tagline": "Bostancı'nın Geleneksel Lezzet Durağı",
     "description": "1987'dan beri Bostancı Oto Sanayi'de taze günlük malzemelerle hazırladığımız ev yemekleri, döner çeşitleri ve yöresel tatlılarımızla hizmetinizdeyiz.",
     "ctaMenu": "Menüyü Keşfet",
-    "phone": "+90 (555) 123 45 67",
+    "phone": "02165752973",
     "heroVideoDesktop": "./assets/video/hero.mp4",
     "heroVideoMobile": "./assets/video/hero.mp4"
   },
@@ -21,36 +21,42 @@
           "name": "Porsiyon",
           "description": "110 gr",
           "price": 430,
+          "priceHalf": null,
           "featuredLabel": ""
         },
         {
           "name": "Pilav Üstü",
           "description": "110 gr",
           "price": 490,
+          "priceHalf": null,
           "featuredLabel": ""
         },
         {
           "name": "1,5 Porsiyon",
           "description": "150 gr",
           "price": 590,
+          "priceHalf": null,
           "featuredLabel": ""
         },
         {
           "name": "Yarım Döner",
           "description": "70 gr",
           "price": 290,
+          "priceHalf": null,
           "featuredLabel": ""
         },
         {
           "name": "Dürüm Döner",
           "description": "90 gr",
           "price": 350,
+          "priceHalf": null,
           "featuredLabel": ""
         },
         {
           "name": "Üç Çeyrek Döner",
           "description": "90 gr",
           "price": 350,
+          "priceHalf": null,
           "featuredLabel": ""
         }
       ]
@@ -150,6 +156,7 @@
           "name": "Kuzu İncik",
           "description": "",
           "price": 680,
+          "priceHalf": null,
           "featuredLabel": ""
         }
       ]
@@ -165,18 +172,21 @@
           "name": "Salatalar",
           "description": "",
           "price": 120,
+          "priceHalf": null,
           "featuredLabel": ""
         },
         {
           "name": "Yoğurt – Cacık",
           "description": "",
           "price": 120,
+          "priceHalf": null,
           "featuredLabel": ""
         },
         {
           "name": "Bardak Yoğurt",
           "description": "",
           "price": 60,
+          "priceHalf": null,
           "featuredLabel": ""
         }
       ]
@@ -192,24 +202,28 @@
           "name": "Meşrubatlar",
           "description": "",
           "price": 70,
+          "priceHalf": null,
           "featuredLabel": ""
         },
         {
           "name": "Açık Ayran – Komposto",
           "description": "",
           "price": 70,
+          "priceHalf": null,
           "featuredLabel": ""
         },
         {
           "name": "Su",
           "description": "",
           "price": 20,
+          "priceHalf": null,
           "featuredLabel": ""
         },
         {
           "name": "Soda",
           "description": "",
           "price": 30,
+          "priceHalf": null,
           "featuredLabel": ""
         }
       ]
@@ -225,6 +239,7 @@
           "name": "Günlük Tatlı",
           "description": "Günün tatlı çeşitlerinden",
           "price": 130,
+          "priceHalf": null,
           "featuredLabel": ""
         }
       ]
@@ -264,9 +279,9 @@
     "address": "Huzur Hoca Caddesi No:76, İçerenköy, Ataşehir / İstanbul 34752",
     "mapsUrl": "https://maps.app.goo.gl/VTeGeL5wVci3rUmo6",
     "phone": "+90 (555) 123 45 67",
-    "twitter": "",
+    "instagram": "https://www.instagram.com/aydogdulokantasi",
     "facebook": "",
-    "instagram": "https://www.instagram.com/aydogdulokantasi"
+    "twitter": ""
   },
   "footer": {
     "about": "AYDOĞDU LOKANTASI, 1987 yılından bu yana Bostancı Oto Sanayi, Ataşehir'de geleneksel esnaf lokantası olarak hizmet vermektedir. Ev yemekleri, döner çeşitleri, yöresel tatlar ve güler yüzlü servis anlayışımızla sizleri ağırlamaktan mutluluk duyarız."
