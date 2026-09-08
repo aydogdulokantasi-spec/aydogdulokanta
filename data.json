@@ -3,7 +3,7 @@
     "name": "AYDOĞDU LOKANTASI",
     "sinceBadge": "1987'dan Beri",
     "tagline": "Bostancı'nın Geleneksel Esnaf Lokantası",
-    "description": "1987'dan beri Bostancı Oto Sanayi'de taze günlük malzemelerle hazırladığımız ev yemekleri, döner çeşitleri ve yöresel tatlılarımızla hizmetinizdeyiz.",
+    "description": "1987 yılında hizmete başlayan lokantamız 40 yıla yakın süreyle Bostancı Oto Sanayi'de taze günlük malzemelerle hazırladığımız tencere ve fırın yemekleri, et döner ve tatlılarımızla hizmet vermektedir.",
     "ctaMenu": "Menüyü Keşfet",
     "phone": "02165752973",
     "heroVideoDesktop": "./assets/video/hero.mp4",
@@ -62,11 +62,11 @@
       ]
     },
     {
-      "id": "gunun-yemekleri",
-      "name": "Günün Yemekleri",
+      "id": "Ana Yemek",
+      "name": "Ana Yemekler",
       "icon": "fa-bowl-food",
       "image": "./ana_yemek.jpg",
-      "note": "*Beşamel-kaşarlı yemeklerde 20 ₺ fark uygulanır",
+      "note": "*Special yemeklerde 20 ₺ fark uygulanır",
       "items": [
         {
           "name": "Çorbalar",
@@ -140,7 +140,7 @@
         },
         {
           "name": "Dolma Yemekleri",
-          "description": "",
+          "description": "Dana kıyma içerir.",
           "price": 280,
           "priceHalf": 170,
           "featuredLabel": ""
@@ -237,7 +237,7 @@
       "items": [
         {
           "name": "Günlük Tatlı",
-          "description": "Sütlaç \nKemalpaşa\nKadayıf\nRevani\nKazandibi \nSpangle",
+          "description": "Sütlaç-\nKemalpaşa-\nKadayıf-\nRevani-\nKazandibi-\nSpangle-",
           "price": 130,
           "priceHalf": null,
           "featuredLabel": ""
@@ -248,27 +248,27 @@
   "hours": [
     {
       "day": "Pazartesi",
-      "hours": "07:30–17:30"
+      "hours": "07:00–17:00"
     },
     {
       "day": "Salı",
-      "hours": "07:30–17:30"
+      "hours": "07:00–17:00"
     },
     {
       "day": "Çarşamba",
-      "hours": "07:30–17:30"
+      "hours": "07:00–17:00"
     },
     {
       "day": "Perşembe",
-      "hours": "07:30–17:30"
+      "hours": "07:00–17:00"
     },
     {
       "day": "Cuma",
-      "hours": "07:30–17:30"
+      "hours": "07:00–17:00"
     },
     {
       "day": "Cumartesi",
-      "hours": "07:30–17:30"
+      "hours": "07:00–17:00"
     },
     {
       "day": "Pazar",
