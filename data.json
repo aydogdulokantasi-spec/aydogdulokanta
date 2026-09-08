@@ -2,7 +2,7 @@
   "restaurant": {
     "name": "AYDOĞDU LOKANTASI",
     "sinceBadge": "1987'dan Beri",
-    "tagline": "Bostancı'nın Geleneksel Lezzet Durağı",
+    "tagline": "Bostancı'nın Geleneksel Esnaf Lokantası",
     "description": "1987'dan beri Bostancı Oto Sanayi'de taze günlük malzemelerle hazırladığımız ev yemekleri, döner çeşitleri ve yöresel tatlılarımızla hizmetinizdeyiz.",
     "ctaMenu": "Menüyü Keşfet",
     "phone": "02165752973",
@@ -105,21 +105,21 @@
         },
         {
           "name": "Köfte Yemekleri",
-          "description": "",
+          "description": "Special Köftelerde +20 TL",
           "price": 300,
           "priceHalf": 220,
           "featuredLabel": ""
         },
         {
           "name": "Tavuk Yemekleri",
-          "description": "",
+          "description": "Special Tavuk Yemeklerde +20 TL",
           "price": 290,
           "priceHalf": 200,
           "featuredLabel": ""
         },
         {
           "name": "Sebze Yemekleri",
-          "description": "",
+          "description": "Special Sebze Yemeklerde +20 TL",
           "price": 250,
           "priceHalf": 180,
           "featuredLabel": ""
@@ -133,7 +133,7 @@
         },
         {
           "name": "Kıymalı Yemekler",
-          "description": "",
+          "description": "Special Kıymalı Yemeklerde +20 TL",
           "price": 280,
           "priceHalf": 170,
           "featuredLabel": ""
@@ -147,7 +147,7 @@
         },
         {
           "name": "Pilav – Makarna",
-          "description": "",
+          "description": "Special Pilav ve Makarna çeşitlerinde +20 TL",
           "price": 120,
           "priceHalf": 90,
           "featuredLabel": ""
@@ -170,7 +170,7 @@
       "items": [
         {
           "name": "Salatalar",
-          "description": "",
+          "description": "Mezeler +20 TL",
           "price": 120,
           "priceHalf": null,
           "featuredLabel": ""
@@ -237,7 +237,7 @@
       "items": [
         {
           "name": "Günlük Tatlı",
-          "description": "Günün tatlı çeşitlerinden",
+          "description": "Sütlaç \nKemalpaşa\nKadayıf\nRevani\nKazandibi \nSpangle",
           "price": 130,
           "priceHalf": null,
           "featuredLabel": ""
@@ -278,7 +278,7 @@
   "contact": {
     "address": "Huzur Hoca Caddesi No:76, İçerenköy, Ataşehir / İstanbul 34752",
     "mapsUrl": "https://maps.app.goo.gl/VTeGeL5wVci3rUmo6",
-    "phone": "+90 (555) 123 45 67",
+    "phone": "+90 (216) 5752973",
     "instagram": "https://www.instagram.com/aydogdulokantasi",
     "facebook": "",
     "twitter": ""
