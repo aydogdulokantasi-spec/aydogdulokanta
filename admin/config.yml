@@ -2,6 +2,7 @@ backend:
   name: github
   repo: aydogdulokantasi-spec/aydogdulokanta
   branch: main
+  auth_methods: [token]
 
 media_folder: "uploads"
 public_folder: "/uploads"
