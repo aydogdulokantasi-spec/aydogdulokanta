@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: johnalfred2/aydogdulokanta
+  repo: aydogdulokantasi-spec/aydogdulokanta
   branch: main
 
 media_folder: "uploads"
