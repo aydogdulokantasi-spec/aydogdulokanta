@@ -5,16 +5,35 @@
 -->
 <html lang="tr">
   <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8GT4YY9SE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-K8GT4YY9SE');
-  gtag('config', 'AW-18216938698');
-</script>
+    <!-- Google tag (gtag.js) + Consent Mode — onay gelmeden ölçüm/reklam depolaması KAPALI -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'wait_for_update': 500
+      });
+      (function () {
+        try {
+          var m = document.cookie.match(/(?:^|;\s*)aydogdu_cerez_onay=([^;]*)/);
+          if (m && decodeURIComponent(m[1]) === 'kabul') {
+            gtag('consent', 'update', {
+              'ad_storage': 'granted',
+              'ad_user_data': 'granted',
+              'ad_personalization': 'granted',
+              'analytics_storage': 'granted'
+            });
+          }
+        } catch (e) {}
+      })();
+      gtag('js', new Date());
+      gtag('config', 'G-K8GT4YY9SE');
+      gtag('config', 'AW-18216938698');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8GT4YY9SE"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -589,6 +608,11 @@ Tatlılar</h3>
         </div>
         <div class="row">
           <p class="text-center pt-4 mt-3 pt-lg-0">&copy; <span id="copyrightCurrentYear"></span> <b>AYDOĞDU LOKANTASI.</b> Tüm hakları saklıdır.</p>
+          <p class="text-center mb-2" style="font-size:14px;">
+            <a href="./gizlilik.html" style="color:inherit;">Gizlilik ve Çerez Politikası</a>
+            <span style="opacity:.6;"> &nbsp;·&nbsp; </span>
+            <a href="#" onclick="if(window.cerezTercihiSifirla){cerezTercihiSifirla();}return false;" style="color:inherit;">Çerez tercihlerini değiştir</a>
+          </p>
           <p class="text-center mb-0 template-credit"><a href="https://github.com/codewithshabbir/restoran" target="_blank">Restoran</a> template by codewithshabbir &mdash; MIT License</p>
         </div>
       </div>
@@ -621,5 +645,68 @@ Tatlılar</h3>
       })();
     </script>
 
+    <!-- Çerez bildirimi bandı -->
+    <div id="cerez-bant" role="dialog" aria-live="polite" aria-label="Çerez bildirimi" hidden>
+      <div class="cerez-ic">
+        <p class="cerez-metin">
+          Web sitemizin çalışmasını sağlamak, kullanımını ölçmek ve reklam çalışmalarımızın sonucunu
+          değerlendirmek amacıyla çerezler kullanıyoruz. Ölçüm ve reklam çerezleri yalnızca onayınızla
+          çalışır. Site kullanımınıza ilişkin bazı veriler, analiz ve reklam hizmeti aldığımız Google ile
+          paylaşılabilir. Ayrıntı için <a href="./gizlilik.html">Çerez Politikası ve Aydınlatma Metni</a>.
+        </p>
+        <div class="cerez-dugmeler">
+          <button type="button" id="cerez-kabul" class="cerez-btn cerez-btn-kabul">Kabul et</button>
+          <button type="button" id="cerez-ret" class="cerez-btn cerez-btn-ret">Reddet</button>
+        </div>
+      </div>
+    </div>
+    <style>
+      #cerez-bant{position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#6B1010;color:#fff;
+        box-shadow:0 -2px 14px rgba(0,0,0,.25);font-size:14px;line-height:1.55}
+      #cerez-bant .cerez-ic{max-width:1140px;margin:0 auto;padding:16px 18px;display:flex;gap:18px;
+        align-items:center;flex-wrap:wrap}
+      #cerez-bant .cerez-metin{margin:0;flex:1 1 420px}
+      #cerez-bant a{color:#F8F6F2;text-decoration:underline}
+      #cerez-bant .cerez-dugmeler{display:flex;gap:10px;flex:0 0 auto}
+      #cerez-bant .cerez-btn{border:1px solid #F8F6F2;border-radius:4px;padding:9px 20px;font-size:14px;
+        font-weight:600;cursor:pointer;white-space:nowrap}
+      #cerez-bant .cerez-btn-kabul{background:#F8F6F2;color:#6B1010}
+      #cerez-bant .cerez-btn-ret{background:transparent;color:#F8F6F2}
+      @media (max-width:575px){#cerez-bant .cerez-dugmeler{width:100%}#cerez-bant .cerez-btn{flex:1}}
+    </style>
+    <script>
+      (function () {
+        var AD = 'aydogdu_cerez_onay', GUN = 180;
+        function oku() {
+          var m = document.cookie.match(/(?:^|;\s*)aydogdu_cerez_onay=([^;]*)/);
+          return m ? decodeURIComponent(m[1]) : null;
+        }
+        function yaz(v) {
+          var d = new Date(); d.setTime(d.getTime() + GUN * 864e5);
+          document.cookie = AD + '=' + encodeURIComponent(v) + '; expires=' + d.toUTCString() +
+            '; path=/; SameSite=Lax';
+        }
+        var bant = document.getElementById('cerez-bant');
+        if (!bant) return;
+        if (!oku()) bant.hidden = false;
+        var kabul = document.getElementById('cerez-kabul');
+        var ret = document.getElementById('cerez-ret');
+        if (kabul) kabul.addEventListener('click', function () {
+          yaz('kabul');
+          if (typeof gtag === 'function') {
+            gtag('consent', 'update', {
+              'ad_storage': 'granted', 'ad_user_data': 'granted',
+              'ad_personalization': 'granted', 'analytics_storage': 'granted'
+            });
+          }
+          bant.hidden = true;
+        });
+        if (ret) ret.addEventListener('click', function () { yaz('ret'); bant.hidden = true; });
+        window.cerezTercihiSifirla = function () {
+          document.cookie = AD + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+          location.reload();
+        };
+      })();
+    </script>
   </body>
 </html>
