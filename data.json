@@ -62,11 +62,11 @@
       ]
     },
     {
-      "id": "Ana Yemek",
-      "name": "Ana Yemekler",
+      "id": "gunun-yemekleri",
+      "name": "Günün Yemekleri",
       "icon": "fa-bowl-food",
       "image": "./ana_yemek.jpg",
-      "note": "*Special yemeklerde 20 ₺ fark uygulanır",
+      "note": "*Beşamel-kaşarlı yemeklerde 20 ₺ fark uygulanır",
       "items": [
         {
           "name": "Çorbalar",
@@ -105,21 +105,21 @@
         },
         {
           "name": "Köfte Yemekleri",
-          "description": "Special Köftelerde +20 TL",
+          "description": "",
           "price": 300,
           "priceHalf": 220,
           "featuredLabel": ""
         },
         {
           "name": "Tavuk Yemekleri",
-          "description": "Special Tavuk Yemeklerde +20 TL",
+          "description": "",
           "price": 290,
           "priceHalf": 200,
           "featuredLabel": ""
         },
         {
           "name": "Sebze Yemekleri",
-          "description": "Special Sebze Yemeklerde +20 TL",
+          "description": "",
           "price": 250,
           "priceHalf": 180,
           "featuredLabel": ""
@@ -133,21 +133,21 @@
         },
         {
           "name": "Kıymalı Yemekler",
-          "description": "Special Kıymalı Yemeklerde +20 TL",
+          "description": "",
           "price": 280,
           "priceHalf": 170,
           "featuredLabel": ""
         },
         {
           "name": "Dolma Yemekleri",
-          "description": "Dana kıyma içerir.",
+          "description": "",
           "price": 280,
           "priceHalf": 170,
           "featuredLabel": ""
         },
         {
           "name": "Pilav – Makarna",
-          "description": "Special Pilav ve Makarna çeşitlerinde +20 TL",
+          "description": "",
           "price": 120,
           "priceHalf": 90,
           "featuredLabel": ""
