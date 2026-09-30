@@ -70,21 +70,21 @@
       "items": [
         {
           "name": "Çorbalar",
-          "description": "Paket servise +10 ₺ ilave edilir",
+          "description": "Mercimek, ezogelin, tavuk suyu, yayla, sebze · Paket servise +10 ₺ ilave edilir",
           "price": 120,
           "priceHalf": 90,
           "featuredLabel": ""
         },
         {
           "name": "Kelle Paça",
-          "description": "",
+          "description": "Perşembe hariç her gün",
           "price": 280,
           "priceHalf": 200,
           "featuredLabel": ""
         },
         {
           "name": "İşkembe",
-          "description": "",
+          "description": "Yalnızca Perşembe",
           "price": 250,
           "priceHalf": 180,
           "featuredLabel": ""
