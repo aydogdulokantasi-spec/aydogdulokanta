@@ -167,3 +167,11 @@ window.addEventListener('scroll', function() {
 document.getElementById('copyrightCurrentYear').textContent = new Date().getFullYear();
 
 
+
+// Klavye erişimi: menü aç/kapat düğmeleri (div role="button") Enter/Boşluk ile de çalışsın
+[getHamburgerIcon, getHamburgerCrossIcon].forEach(function(el) {
+  if (!el) return;
+  el.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); }
+  });
+});

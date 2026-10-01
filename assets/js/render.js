@@ -24,7 +24,7 @@
     var phoneLinks = document.querySelectorAll('a[href*="tel:"]');
     phoneLinks.forEach(function(el) {
       el.href = 'tel:' + d.phone.replace(/[^0-9]/g, '');
-      if (el.id !== 'floating-phone') {
+      if (el.id !== 'floating-phone' && !el.hasAttribute('data-keep-text')) {
         setText(el, d.phone);
       }
     });
