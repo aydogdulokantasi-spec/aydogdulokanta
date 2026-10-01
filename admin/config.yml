@@ -22,7 +22,8 @@ collections:
               - { label: "Restoran Adı", name: "name", widget: "string" }
               - { label: "Yıl Rozeti", name: "sinceBadge", widget: "string" }
               - { label: "Etiket", name: "tagline", widget: "string" }
-              - { label: "Açıklama", name: "description", widget: "text" }
+              - { label: "Kısa Açıklama (ana ekran, tek cümle)", name: "heroDesc", widget: "string", required: false }
+              - { label: "Hikâyemiz (uzun metin, paragraflar arasında boş satır)", name: "description", widget: "text" }
               - { label: "Menü Butonu", name: "ctaMenu", widget: "string" }
               - { label: "Telefon", name: "phone", widget: "string" }
               - { label: "Video (Masaüstü)", name: "heroVideoDesktop", widget: "string", required: false }

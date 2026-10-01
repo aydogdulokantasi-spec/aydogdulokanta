@@ -17,7 +17,8 @@
     }
     setText(document.querySelector('.badge-years'), d.sinceBadge);
     setText(document.querySelector('.hero-subtitle'), d.tagline);
-    setText(document.querySelector('.hero-desc'), d.description);
+    if (d.heroDesc) setText(document.querySelector('.hero-desc'), d.heroDesc);
+    renderStory(d.description);
     var ctaMenu = document.querySelector('.book-a-table a');
     if (ctaMenu) ctaMenu.textContent = d.ctaMenu;
     var phoneLinks = document.querySelectorAll('a[href*="tel:"]');
@@ -27,10 +28,32 @@
         setText(el, d.phone);
       }
     });
-    var desktopSrc = document.querySelector('.hero-video-desktop source');
-    if (desktopSrc && d.heroVideoDesktop) desktopSrc.src = d.heroVideoDesktop;
-    var mobileSrc = document.querySelector('.hero-video-mobile source');
-    if (mobileSrc && d.heroVideoMobile) mobileSrc.src = d.heroVideoMobile;
+    // Video kaynağı yalnızca CMS'te farklı bir dosya girildiyse değiştirilir
+    // (aynı dosyayı yeniden atamak indirmeyi baştan başlatır).
+    var heroVideo = document.querySelector('.hero-video');
+    var wanted = d.heroVideoDesktop || d.heroVideoMobile;
+    if (heroVideo && wanted) {
+      var cur = heroVideo.getAttribute('src') || '';
+      if (cur.replace(/^\.\//, '') !== String(wanted).replace(/^\.\//, '')) {
+        heroVideo.src = wanted;
+      }
+    }
+  }
+
+  // Uzun hikâye metni ana ekrana değil, #hikayemiz bölümüne basılır.
+  // Paragraflar boş satırla ayrılır; tek satır sonları korunur (CSS: pre-line).
+  function renderStory(text) {
+    var box = document.querySelector('#hikayemiz .story-body');
+    if (!box || !text) return;
+    var parts = String(text).split(/\n\s*\n/).map(function(t) { return t.trim(); }).filter(Boolean);
+    if (!parts.length) return;
+    box.innerHTML = '';
+    parts.forEach(function(t, i) {
+      var p = document.createElement('p');
+      if (i === 0) p.className = 'story-lead';
+      p.textContent = i === 0 ? t.replace(/[;:,]\s*$/, '') : t;
+      box.appendChild(p);
+    });
   }
 
   function renderHours(hours) {

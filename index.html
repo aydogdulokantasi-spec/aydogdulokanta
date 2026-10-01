@@ -5,6 +5,8 @@
 -->
 <html lang="tr">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Google tag (gtag.js) + Consent Mode — onay gelmeden ölçüm/reklam depolaması KAPALI -->
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -34,36 +36,34 @@
       gtag('config', 'AW-18216938698');
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8GT4YY9SE"></script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32.png">
+    <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png">
     <title>AYDOĞDU LOKANTASI | Geleneksel Esnaf Lokantası</title>
     <meta name="description" content="AYDOĞDU LOKANTASI – 1987'den beri Bostancı Oto Sanayi'nde esnaf lokantası. Tencere ve fırın yemekleri, döner, çorba. Yemek kartı geçer; 11–12 ve 13:30 sonrası sırasız.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./assets/css/style.css?v=2.6" />
+    <link rel="stylesheet" href="./assets/css/style.css?v=2.7" />
     <style>
       header.scrolled .menus > ul > li::after { background-color: var(--text-color-white); }
+      /* Satır içi SVG ikonlar (Font Awesome webfont yerine) */
+      i.ico { display: inline-block; line-height: 1; font-style: normal; }
+      i.ico svg { width: 1em; height: 1em; fill: currentColor; vertical-align: -0.125em; }
+      i.ico.fa-2x { font-size: 2em; }
+      #hikayemiz .story-body p { white-space: pre-line; margin-bottom: 1rem; line-height: 1.7; }
+      #hikayemiz .story-body p.story-lead { font-size: 1.25rem; font-weight: 700; color: var(--primary-color); }
     </style>
   </head>
   <body>
 
-    <div class="loader">
-      <img src="./assets/images/logo.png" alt="AYDOĞDU" class="loader-logo">
-      <div class="loader-dots"><span></span><span></span><span></span></div>
-    </div>
 
     <header>
       <div class="container header my-1 d-none d-lg-flex">
         <div class="logo">
           <a href="#anasayfa">
-            <img src="./assets/images/logo.png" alt="AYDOĞDU">
+            <img src="./assets/images/logo.webp" alt="AYDOĞDU" width="240" height="156">
           </a>
         </div>
         <div class="menus">
@@ -75,6 +75,9 @@
                 <a class="text-decoration-none text-uppercase px-3" href="#menu">Menü</a>
               </li>
               <li class="list-unstyled py-1">
+                <a class="text-decoration-none text-uppercase px-3" href="#hikayemiz">Hikâyemiz</a>
+              </li>
+              <li class="list-unstyled py-1">
                 <a class="text-decoration-none text-uppercase px-3" href="#iletisim">İletişim & Konum</a>
               </li>
           </ul>
@@ -83,12 +86,12 @@
 
       <div class="d-lg-none mobile-header-grid py-2">
         <div id="hamburger" class="mobile-hamburger">
-          <i class="fa fa-2x fa-bars text-white"></i>
+          <i class="ico fa-2x text-white"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></i>
         </div>
         <div class="mobile-nav-logo">
           <div class="logo">
             <a href="#anasayfa">
-              <img src="./assets/images/logo.png" alt="AYDOĞDU">
+              <img src="./assets/images/logo.webp" alt="AYDOĞDU" width="240" height="156">
             </a>
           </div>
         </div>
@@ -96,7 +99,7 @@
       </div>
       <div class="position-fixed w-auto bg-white h-100 top-0 start-0 px-3" id="mobile-menu">
           <div id="hamburger-cross" class="d-flex justify-content-end align-items-center py-2">
-            <i class="fa fa-2x fa-plus me-3"></i>
+            <i class="ico fa-2x me-3"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/></svg></i>
           </div>
           <div class="menus">
             <ul class="d-flex flex-column ps-2 mb-0 mt-4">
@@ -105,6 +108,9 @@
               </li>
               <li class="list-unstyled py-1">
                 <a class="text-dark text-decoration-none text-uppercase p-3" href="#menu">Menü</a>
+              </li>
+              <li class="list-unstyled py-1">
+                <a class="text-dark text-decoration-none text-uppercase p-3" href="#hikayemiz">Hikâyemiz</a>
               </li>
               <li class="list-unstyled py-1">
                 <a class="text-dark text-decoration-none text-uppercase p-3" href="#iletisim">İletişim & Konum</a>
@@ -118,23 +124,18 @@
       <!-- ===== Ana Sayfa / Hero ===== -->
       <section id="anasayfa" class="banner py-5">
         <div class="banner-video-bg">
-          <video autoplay muted loop playsinline class="hero-video-desktop d-none d-md-block">
-            <source src="./assets/video/hero.mp4" type="video/mp4">
-          </video>
-          <video autoplay muted loop playsinline class="hero-video-mobile d-md-none">
-            <source src="./assets/video/hero.mp4" type="video/mp4">
-          </video>
+          <video class="hero-video" autoplay muted loop playsinline preload="metadata"
+            poster="./assets/images/hero-poster.webp" src="./assets/video/hero.mp4"></video>
           <div class="banner-overlay"></div>
         </div>
         <div class="container py-5" style="position:relative;z-index:2;">
           <div class="row">
              <div class="col-lg-7 banner-content">
               <span class="badge-years">1987'den Beri</span>
-              <h1 class="display-2">AYDOĞDU<br>LOKANTASI</h1>
-              <p class="hero-subtitle">Bostancı'nın Geleneksel Lezzet Durağı</p>
+              <h1 class="display-2">AYDOĞDU LOKANTASI</h1>
+              <p class="hero-subtitle">Bostancı'nın Geleneksel Esnaf Lokantası</p>
               <p class="hero-desc">
-                1987'den beri Bostancı Oto Sanayi'de taze günlük malzemelerle hazırladığımız
-                tencere ve fırın yemekleri, döner çeşitleri ve yöresel tatlılarımızla hizmetinizdeyiz.
+                1987'den beri Bostancı Oto Sanayi'de her gün yaklaşık 30 çeşit tencere ve fırın yemeği, Karadeniz usulü et döner ve sabah çorbaları.
               </p>
               <div class="hero-ctas">
                 <div class="book-a-table">
@@ -240,7 +241,7 @@ Döner</h3>
             <div class="row g-3 mb-4">
               <div class="col-12 col-lg-4">
                 <div class="food-placeholder">
-                  <img src="./doner.jpg" alt="Döner" loading="lazy">
+                  <img src="./doner.webp" alt="Döner" loading="lazy" decoding="async" width="720" height="960">
                 </div>
               </div>
             </div>
@@ -295,7 +296,7 @@ Günün Yemekleri</h3>
             <div class="row g-3 mb-4">
               <div class="col-12 col-lg-4">
                 <div class="food-placeholder">
-                  <img src="./ana_yemek.jpg" alt="Günün Yemekleri" loading="lazy">
+                  <img src="./ana_yemek.webp" alt="Günün Yemekleri" loading="lazy" decoding="async" width="720" height="960">
                 </div>
               </div>
             </div>
@@ -376,7 +377,7 @@ Yanındakiler</h3>
             <div class="row g-3 mb-4">
               <div class="col-12 col-lg-4">
                 <div class="food-placeholder">
-                  <img src="./corba.jpg" alt="Yanındakiler" loading="lazy">
+                  <img src="./corba.webp" alt="Yanındakiler" loading="lazy" decoding="async" width="720" height="960">
                 </div>
               </div>
             </div>
@@ -415,7 +416,7 @@ Yanındakiler</h3>
             <div class="row g-3 mb-4">
               <div class="col-12 col-lg-4">
                 <div class="food-placeholder">
-                  <img src="./ana_yemek.jpg" alt="İçecekler" loading="lazy">
+                  <img src="./ana_yemek.webp" alt="İçecekler" loading="lazy" decoding="async" width="720" height="960">
                 </div>
               </div>
             </div>
@@ -445,12 +446,12 @@ Tatlılar</h3>
             <div class="row g-3 mb-4">
               <div class="col-12 col-lg-4">
                 <div class="food-placeholder">
-                  <img src="./tatli.jpg" alt="Tatlılar" loading="lazy">
+                  <img src="./tatli.webp" alt="Tatlılar" loading="lazy" decoding="async" width="720" height="900">
                 </div>
               </div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Günlük Tatlı</h5><p>Günün tatlı çeşitlerinden</p></div>
+              <div class="item-left"><h5>Günlük Tatlı</h5><p>Sütlaç, Kemalpaşa, Kadayıf, Revani, Kazandibi, Supangle</p></div>
               <div class="item-right"><span class="item-price">130 ₺</span></div>
             </div>
           </div>
@@ -464,17 +465,17 @@ Tatlılar</h3>
 
             <div class="col-lg-7">
               <h2 class="h4 fw-bold mb-1">Yemek Kartı Geçerlidir</h2>
-              <p class="text-muted mb-3">Tüm yemek kartlarını kabul ediyoruz.</p>
+              <p class="text-muted mb-3">Aşağıdaki yemek kartları geçerlidir.</p>
               <div class="d-flex flex-wrap align-items-center gap-4 mb-2">
-              <img src="./assets/images/multinet-up-seeklogo.png" alt="Multinet" loading="lazy" decoding="async"
+              <img src="./assets/images/multinet-up-seeklogo.webp" alt="Multinet" loading="lazy" decoding="async"
                    style="height:44px;width:120px;object-fit:contain;">
-              <img src="./assets/images/pluxee-seeklogo.png" alt="Pluxee (Sodexo)" loading="lazy" decoding="async"
+              <img src="./assets/images/pluxee-seeklogo.webp" alt="Pluxee (Sodexo)" loading="lazy" decoding="async"
                    style="height:44px;width:120px;object-fit:contain;">
-              <img src="./assets/images/ticket-restaurant-seeklogo.png" alt="Ticket Restaurant" loading="lazy" decoding="async"
+              <img src="./assets/images/ticket-restaurant-seeklogo.webp" alt="Ticket Restaurant" loading="lazy" decoding="async"
                    style="height:44px;width:120px;object-fit:contain;">
-              <img src="./assets/images/setcard-seeklogo.png" alt="Setcard" loading="lazy" decoding="async"
+              <img src="./assets/images/setcard-seeklogo.webp" alt="Setcard" loading="lazy" decoding="async"
                    style="height:44px;width:120px;object-fit:contain;">
-              <img src="./assets/images/metropol-card-seeklogo.png" alt="Metropol" loading="lazy" decoding="async"
+              <img src="./assets/images/metropol-card-seeklogo.webp" alt="Metropol" loading="lazy" decoding="async"
                    style="height:44px;width:120px;object-fit:contain;">
               </div>
               <p class="text-muted small mb-0">
@@ -490,6 +491,31 @@ Tatlılar</h3>
               </p>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Hikâyemiz (metin data.json → restaurant.description) ===== -->
+      <section id="hikayemiz" class="py-5">
+        <div class="container" style="max-width:760px;">
+          <div class="section-title text-center mb-4">
+            <h5>1987'den Beri</h5>
+            <h2 class="display-6 fw-bold">Hikâyemiz</h2>
+          </div>
+          <div class="story-body">
+            <p class="story-lead">1987’den Bugüne Değişmeyen Bir Lezzet</p>
+            <p>Her şey 1987 yılında Bostancı Sanayi Sitesi’nde, 6 masalık küçük bir lokantayla başladı.</p>
+            <p>Babamız Süleyman Aydoğdu’nun kurduğu bu işletmeyi bugün üç kardeş olarak aynı heyecan ve aynı esnaflık anlayışıyla sürdürüyoruz.</p>
+            <p>Yıllar içinde büyüdük. Bugün 100 kişilik salonumuzda her gün yüzlerce misafirimizi ağırlıyoruz. Ancak bizim için değişmeyen bir şey var:</p>
+            <p>Geleneksel Türk mutfağının gerçek lezzetlerini, kaliteli malzemelerle ve ulaşılabilir fiyatlarla sunmak.</p>
+            <p>Her gün yaklaşık 30 çeşit tencere ve fırın yemeği hazırlıyor, mutfağımızın özel lezzetlerinden Karadeniz usulü et dönerimizi de misafirlerimizle buluşturuyoruz.</p>
+            <p>Bizi yıllardır tercih eden sanayi esnafından plaza çalışanlarına, yemeklerimizi tatmak için uzaklardan gelen misafirlerimize kadar geniş bir ailemiz var.</p>
+            <p>Bizce iyi bir lokanta yalnızca güzel yemek yapan yer değildir.</p>
+            <p>İyi lokanta; misafirini tanıyan, ona değer veren ve yıllar sonra bile aynı sofraya yeniden davet edebilen yerdir.</p>
+            <p>İyi yemek.
+Kaliteli malzeme.
+Samimi esnaflık.</p>
+            <p>1987’den beri değişmeyen anlayışımız bu.</p>
           </div>
         </div>
       </section>
@@ -511,7 +537,7 @@ Tatlılar</h3>
                 <div class="d-flex flex-column px-0 justify-content-between">
                   <div class="contact-info-box d-flex align-items-center pe-2 py-3">
                     <div class="contact-icon-box">
-                      <i class="fa-solid fa-location-dot border-bottom pb-2"></i>
+                      <i class="ico border-bottom pb-2"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg></i>
                     </div>
                     <div class="ps-3">
                       <p class="mb-0">
@@ -525,7 +551,7 @@ Tatlılar</h3>
                   </div>
                   <div class="contact-info-box d-flex align-items-center pe-2 py-3">
                     <div class="contact-icon-box">
-                      <i class="fa-solid fa-phone border-bottom pb-2"></i>
+                      <i class="ico border-bottom pb-2"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></i>
                     </div>
                     <div class="ps-3">
                       <p class="mb-0">
@@ -536,7 +562,7 @@ Tatlılar</h3>
                   </div>
                   <div class="contact-info-box d-flex align-items-center pe-2 py-3">
                     <div class="contact-icon-box">
-                      <i class="fa-solid fa-clock border-bottom pb-2"></i>
+                      <i class="ico border-bottom pb-2"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg></i>
                     </div>
                     <div class="ps-3">
                       <p class="mb-0">
@@ -554,10 +580,10 @@ Tatlılar</h3>
     </main>
 
     <a href="tel:+902165752973" id="floating-phone" class="d-lg-none" aria-label="Bizi Arayın">
-      <i class="fas fa-phone"></i>
+      <i class="ico"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></i>
     </a>
 
-    <a href="#" id="back-to-top"><i class="fa-solid fa-angles-up"></i></a>
+    <a href="#" id="back-to-top" aria-label="Yukarı çık"><i class="ico"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"/></svg></i></a>
 
     <footer>
       <div class="container">
@@ -567,15 +593,15 @@ Tatlılar</h3>
               <div class="col-lg-6 px-0">
                 <div class="logo">
                   <a href="#anasayfa">
-                    <img src="./assets/images/logo.png" alt="AYDOĞDU">
+                    <img src="./assets/images/logo.webp" alt="AYDOĞDU" width="240" height="156">
                   </a>
                 </div>
               </div>
               <div class="col-lg-6 pt-4 pt-lg-0 d-flex align-items-center justify-content-start justify-content-lg-end">
                 <div class="social-icons d-flex">
                   <ul class="d-flex mb-0 ps-0">
-                    <li class="mx-2"><a class="text-decoration-none text-white" data-social="facebook" href="https://www.facebook.com/AydogduLokantasi/"><i class="fab fa-facebook"></i></a></li>
-                    <li class="mx-2"><a class="text-decoration-none text-white" data-social="instagram" href="https://www.instagram.com/aydogdulokantasi"><i class="fab fa-instagram"></i></a></li>
+                    <li class="mx-2"><a class="text-decoration-none text-white" data-social="facebook" aria-label="Facebook" href="https://www.facebook.com/AydogduLokantasi/"><i class="ico"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></i></a></li>
+                    <li class="mx-2"><a class="text-decoration-none text-white" data-social="instagram" aria-label="Instagram" href="https://www.instagram.com/aydogdulokantasi"><i class="ico"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -590,7 +616,7 @@ Tatlılar</h3>
 <div class="row">
               <div class="d-flex flex-column flex-lg-row px-0 justify-content-between">
                 <div class="location d-flex align-items-center pe-2 py-3">
-                  <i class="fa-solid fa-location-dot text-white fa-2x border-bottom pb-2"></i>
+                  <i class="ico text-white fa-2x border-bottom pb-2"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg></i>
                   <div class="ps-3">
                     <p class="mb-0">
                       Huzur Hoca Caddesi No:76<br>
@@ -599,7 +625,7 @@ Tatlılar</h3>
                   </div>
                 </div>
                 <div class="location d-flex align-items-center pe-2 py-3">
-                  <i class="fa-solid fa-mobile text-white fa-2x border-bottom pb-2"></i>
+                  <i class="ico text-white fa-2x border-bottom pb-2"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M80 0C44.7 0 16 28.7 16 64l0 384c0 35.3 28.7 64 64 64l224 0c35.3 0 64-28.7 64-64l0-384c0-35.3-28.7-64-64-64L80 0zm80 432l64 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg></i>
                   <div class="ps-3">
                       <p class="mb-0">
                         <a href="tel:+902165752973" style="color:inherit;text-decoration:none;">0216 575 29 73</a>
@@ -633,10 +659,8 @@ Tatlılar</h3>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js?v=1.8"></script>
-    <script src="./assets/js/render.js?v=1.7"></script>
+    <script src="./assets/js/script.js?v=1.9"></script>
+    <script src="./assets/js/render.js?v=1.8"></script>
 
     <!-- Dönüşüm etkinlikleri: telefon ve yol tarifi tıklamaları -->
     <script>

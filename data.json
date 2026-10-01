@@ -3,6 +3,7 @@
     "name": "AYDOĞDU LOKANTASI",
     "sinceBadge": "1987'den Beri",
     "tagline": "Bostancı'nın Geleneksel Esnaf Lokantası",
+    "heroDesc": "1987'den beri Bostancı Oto Sanayi'de her gün yaklaşık 30 çeşit tencere ve fırın yemeği, Karadeniz usulü et döner ve sabah çorbaları.",
     "description": "1987’den Bugüne Değişmeyen Bir Lezzet;\n\nHer şey 1987 yılında Bostancı Sanayi Sitesi’nde, 6 masalık küçük bir lokantayla başladı.\n\nBabamız Süleyman Aydoğdu’nun kurduğu bu işletmeyi bugün üç kardeş olarak aynı heyecan ve aynı esnaflık anlayışıyla sürdürüyoruz.\n\nYıllar içinde büyüdük. Bugün 100 kişilik salonumuzda her gün yüzlerce misafirimizi ağırlıyoruz. Ancak bizim için değişmeyen bir şey var:\n\nGeleneksel Türk mutfağının gerçek lezzetlerini, kaliteli malzemelerle ve ulaşılabilir fiyatlarla sunmak.\n\nHer gün yaklaşık 30 çeşit tencere ve fırın yemeği hazırlıyor, mutfağımızın özel lezzetlerinden Karadeniz usulü et dönerimizi de misafirlerimizle buluşturuyoruz.\n\nBizi yıllardır tercih eden sanayi esnafından plaza çalışanlarına, yemeklerimizi tatmak için uzaklardan gelen misafirlerimize kadar geniş bir ailemiz var.\n\nBizce iyi bir lokanta yalnızca güzel yemek yapan yer değildir.\n\nİyi lokanta; misafirini tanıyan, ona değer veren ve yıllar sonra bile aynı sofraya yeniden davet edebilen yerdir.\n\nİyi yemek.\nKaliteli malzeme.\nSamimi esnaflık.\n\n1987’den beri değişmeyen anlayışımız bu.",
     "ctaMenu": "Menüyü Keşfet",
     "phone": "0216 575 29 73",
@@ -14,7 +15,7 @@
       "id": "doner",
       "name": "Döner",
       "icon": "fa-utensils",
-      "image": "./doner.jpg",
+      "image": "./doner.webp",
       "note": "",
       "items": [
         {
@@ -65,7 +66,7 @@
       "id": "gunun-yemekleri",
       "name": "Günün Yemekleri",
       "icon": "fa-bowl-food",
-      "image": "./ana_yemek.jpg",
+      "image": "./ana_yemek.webp",
       "note": "*Beşamel-kaşarlı yemeklerde 20 ₺ fark uygulanır",
       "items": [
         {
@@ -165,12 +166,12 @@
       "id": "yanindakiler",
       "name": "Yanındakiler",
       "icon": "fa-drumstick-bite",
-      "image": "./corba.jpg",
+      "image": "./corba.webp",
       "note": "",
       "items": [
         {
           "name": "Salatalar",
-          "description": "Mezeler +20 TL",
+          "description": "Mezeler +20 ₺",
           "price": 120,
           "priceHalf": null,
           "featuredLabel": ""
@@ -195,7 +196,7 @@
       "id": "icecekler",
       "name": "İçecekler",
       "icon": "fa-glass-water",
-      "image": "./ana_yemek.jpg",
+      "image": "./ana_yemek.webp",
       "note": "",
       "items": [
         {
@@ -232,12 +233,12 @@
       "id": "tatlilar",
       "name": "Tatlılar",
       "icon": "fa-ice-cream",
-      "image": "./tatli.jpg",
+      "image": "./tatli.webp",
       "note": "İlave tahin +10 ₺ / fındık-ceviz +10 ₺",
       "items": [
         {
           "name": "Günlük Tatlı",
-          "description": "Sütlaç-\nKemalpaşa-\nKadayıf-\nRevani-\nKazandibi-\nSpangle-",
+          "description": "Sütlaç, Kemalpaşa, Kadayıf, Revani, Kazandibi, Supangle",
           "price": 130,
           "priceHalf": null,
           "featuredLabel": ""

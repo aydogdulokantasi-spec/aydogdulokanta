@@ -3,13 +3,7 @@
   Heavily customized and extended for AYDOĞDU LOKANTASI.
 */
 
-document.addEventListener("DOMContentLoaded", function() {
-  const loader = document.querySelector('.loader');
-  setTimeout(function() {
-    loader.style.opacity = '0';
-    loader.style.display = 'none';
-  }, 3000);
-});
+// Açılış ekranı (loader) kaldırıldı: sayfa her ziyarette 3 sn bekletiliyordu.
 
 // Header functionality
 var getHamburgerIcon = document.getElementById("hamburger");
