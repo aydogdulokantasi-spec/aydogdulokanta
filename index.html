@@ -123,12 +123,13 @@
       @media (max-width: 991.98px) { .hero-btn[href^="tel:"] { display: none; } }
       #cumartesi .cumartesi-saat { font-weight: 700; color: var(--primary-color); }
       #floating-phone { transition: bottom .2s; }
-      /* Mobil: sağ altta WhatsApp kısayolu; "yukarı çık" yalnız masaüstünde */
+      /* Mobil: sağ altta WhatsApp kısayolu (solda telefon); "yukarı çık" yalnız masaüstünde */
       #floating-whatsapp { position: fixed; bottom: 20px; right: 20px; width: 56px; height: 56px; border-radius: 50%;
         background: #25D366; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 28px;
         box-shadow: 0 4px 15px rgba(0,0,0,.3); z-index: 10; text-decoration: none; transition: bottom .2s, transform .2s; }
       #floating-whatsapp:hover { transform: scale(1.08); }
-      @media (min-width: 992px) { #floating-whatsapp { display: none; } }
+      /* Masaüstü: telefon düğmesi yok; WhatsApp sol altta, "yukarı çık" sağ altta */
+      @media (min-width: 992px) { #floating-whatsapp { right: auto; left: 20px; } }
       @media (max-width: 991.98px) { #back-to-top { display: none !important; } }
       /* Satır içi SVG ikonlar (Font Awesome webfont yerine) */
       i.ico { display: inline-block; line-height: 1; font-style: normal; }
