@@ -109,8 +109,7 @@
     <link rel="preload" href="./assets/images/hero-poster-2.webp" as="image" fetchpriority="high">
     <link rel="preload" href="./assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./assets/fonts/inter-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="./assets/css/bootstrap-purged.min.css?v=1" />
-    <link rel="stylesheet" href="./assets/css/style.css?v=2.8" />
+    <link rel="stylesheet" href="./assets/css/style.css?v=3.0" />
     <style>
       header.scrolled .menus > ul > li::after { background-color: var(--text-color-white); }
       .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
@@ -206,8 +205,8 @@
       <!-- ===== Ana Sayfa / Hero ===== -->
       <section id="anasayfa" class="banner py-5">
         <div class="banner-video-bg">
-          <video class="hero-video" autoplay muted loop playsinline preload="metadata"
-            poster="./assets/images/hero-poster-2.webp" src="./assets/video/hero-2.mp4"></video>
+          <video class="hero-video" muted loop playsinline preload="none"
+            poster="./assets/images/hero-poster-2.webp" data-src="./assets/video/hero-2.mp4"></video>
           <div class="banner-overlay"></div>
         </div>
         <div class="container py-5" style="position:relative;z-index:2;">
@@ -763,7 +762,24 @@ Samimi esnaflık.</p>
     </footer>
 
     <script src="./assets/js/script.js?v=2.0"></script>
-    <script src="./assets/js/render.js?v=1.9"></script>
+    <script src="./assets/js/render.js?v=2.0"></script>
+
+    <!-- Hero videosu: sayfa yüklendikten sonra başlar (kapak karesi önce görünür; LCP için) -->
+    <script>
+      (function () {
+        var v = document.querySelector('.hero-video');
+        if (!v) return;
+        var c = navigator.connection;
+        if (c && c.saveData) return; // veri tasarrufu modunda yalnız kapak karesi
+        function baslat() {
+          if (v.getAttribute('src')) return;
+          v.src = v.getAttribute('data-src');
+          var p = v.play(); if (p && p.catch) p.catch(function () {});
+        }
+        if (document.readyState === 'complete') setTimeout(baslat, 800);
+        else window.addEventListener('load', function () { setTimeout(baslat, 800); });
+      })();
+    </script>
 
     <!-- Dönüşüm etkinlikleri: telefon ve yol tarifi tıklamaları -->
     <script>

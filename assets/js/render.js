@@ -33,9 +33,10 @@
     var heroVideo = document.querySelector('.hero-video');
     var wanted = d.heroVideoDesktop || d.heroVideoMobile;
     if (heroVideo && wanted) {
-      var cur = heroVideo.getAttribute('src') || '';
+      var cur = heroVideo.getAttribute('data-src') || heroVideo.getAttribute('src') || '';
       if (cur.replace(/^\.\//, '') !== String(wanted).replace(/^\.\//, '')) {
-        heroVideo.src = wanted;
+        heroVideo.setAttribute('data-src', wanted);
+        if (heroVideo.getAttribute('src')) heroVideo.src = wanted; // video zaten başladıysa değiştir
       }
     }
   }
