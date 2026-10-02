@@ -6,6 +6,12 @@
 (function() {
   'use strict';
 
+  // İngilizce sayfa (en.html): <html lang="en"> ise metinler window.EN_TEXT sözlüğünden çevrilir.
+  // Fiyatlar her iki dilde de data.json'dan gelir. Sözlükte karşılığı olmayan yeni ürün Türkçe görünür.
+  var IS_EN = (document.documentElement.lang || '').toLowerCase().indexOf('en') === 0;
+  var EN_TEXT = window.EN_TEXT || {};
+  function t(s) { return (IS_EN && s && EN_TEXT[s]) ? EN_TEXT[s] : s; }
+
   function setText(el, text) {
     if (el) el.textContent = text;
   }
@@ -15,12 +21,14 @@
     if (h1 && d.name) {
       h1.textContent = d.name;
     }
-    setText(document.querySelector('.badge-years'), d.sinceBadge);
-    setText(document.querySelector('.hero-subtitle'), d.tagline);
-    if (d.heroDesc) setText(document.querySelector('.hero-desc'), d.heroDesc);
-    renderStory(d.description);
-    var ctaMenu = document.querySelector('.book-a-table a');
-    if (ctaMenu) ctaMenu.textContent = d.ctaMenu;
+    if (!IS_EN) {
+      setText(document.querySelector('.badge-years'), d.sinceBadge);
+      setText(document.querySelector('.hero-subtitle'), d.tagline);
+      if (d.heroDesc) setText(document.querySelector('.hero-desc'), d.heroDesc);
+      renderStory(d.description);
+      var ctaMenu = document.querySelector('.book-a-table a');
+      if (ctaMenu) ctaMenu.textContent = d.ctaMenu;
+    }
     var phoneLinks = document.querySelectorAll('a[href*="tel:"]');
     phoneLinks.forEach(function(el) {
       el.href = 'tel:' + d.phone.replace(/[^0-9]/g, '');
@@ -71,8 +79,8 @@
     });
 
     function label(group) {
-      if (group.days.length === 1) return group.days[0];
-      return group.days[0] + '\u2013' + group.days[group.days.length - 1];
+      if (group.days.length === 1) return t(group.days[0]);
+      return t(group.days[0]) + '\u2013' + t(group.days[group.days.length - 1]);
     }
 
     var container = document.querySelector('.reservation-date-time');
@@ -83,7 +91,7 @@
         var b = document.createElement('b');
         b.textContent = label(g);
         p.appendChild(b);
-        p.appendChild(document.createTextNode(' ' + g.hours));
+        p.appendChild(document.createTextNode(' ' + t(g.hours)));
         container.appendChild(p);
       });
     }
@@ -93,7 +101,7 @@
       contactHours.innerHTML = '';
       groups.forEach(function(g, i) {
         if (i > 0) contactHours.appendChild(document.createElement('br'));
-        contactHours.appendChild(document.createTextNode(label(g) + ': ' + g.hours));
+        contactHours.appendChild(document.createTextNode(label(g) + ': ' + t(g.hours)));
       });
     }
   }
@@ -118,6 +126,7 @@
   }
 
   function renderFooter(d) {
+    if (IS_EN) return;
     var aboutEl = document.querySelector('.content-desc p');
     if (aboutEl && d.footer) setText(aboutEl, d.footer.about);
   }
@@ -130,7 +139,7 @@
         var tabIcon = tab.querySelector('.menu-icon');
         tab.textContent = '';
         if (tabIcon) tab.appendChild(tabIcon);
-        tab.appendChild(document.createTextNode(' ' + cat.name));
+        tab.appendChild(document.createTextNode(' ' + t(cat.name)));
       }
 
       var section = document.getElementById(cat.id);
@@ -142,19 +151,19 @@
         if (iconSvg) {
           titleEl.appendChild(iconSvg);
         }
-        titleEl.appendChild(document.createTextNode(' ' + cat.name));
+        titleEl.appendChild(document.createTextNode(' ' + t(cat.name)));
       }
 
       var noteEl = section.querySelector('.category-note');
       if (noteEl) {
-        setText(noteEl, cat.note || '');
+        setText(noteEl, t(cat.note) || '');
         noteEl.style.display = cat.note ? '' : 'none';
       }
 
       var img = section.querySelector('.food-placeholder img');
       if (img && cat.image) {
         img.src = cat.image;
-        img.alt = cat.name;
+        img.alt = t(cat.name);
       }
 
       var items = section.querySelectorAll('.item-wrapper');
@@ -165,16 +174,16 @@
         var desc = wrapper.querySelector('.item-left p');
         var priceEl = wrapper.querySelector('.item-price');
         if (h5) {
-          h5.textContent = item.name;
+          h5.textContent = t(item.name);
           if (item.featuredLabel) {
             var span = document.createElement('span');
             span.className = 'featured-badge';
-            span.textContent = item.featuredLabel;
+            span.textContent = t(item.featuredLabel);
             h5.appendChild(document.createTextNode(' '));
             h5.appendChild(span);
           }
         }
-        if (desc) setText(desc, item.description);
+        if (desc) setText(desc, t(item.description));
         if (priceEl) {
           var priceText = item.priceHalf ? (item.price + ' / ' + item.priceHalf) : ('' + item.price);
           priceEl.textContent = '';
