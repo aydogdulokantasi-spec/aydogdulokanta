@@ -106,12 +106,11 @@
       ]
     }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./assets/css/style.css?v=2.7" />
+    <link rel="preload" href="./assets/images/hero-poster-2.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="./assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/inter-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="./assets/css/bootstrap-purged.min.css?v=1" />
+    <link rel="stylesheet" href="./assets/css/style.css?v=2.8" />
     <style>
       header.scrolled .menus > ul > li::after { background-color: var(--text-color-white); }
       .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
@@ -146,7 +145,7 @@
       <div class="container header my-1 d-none d-lg-flex">
         <div class="logo">
           <a href="#anasayfa">
-            <img src="./assets/images/logo.webp" alt="AYDOĞDU" width="240" height="156">
+            <img src="./assets/images/logo.webp" alt="AYDOĞDU" width="184" height="120">
           </a>
         </div>
         <div class="menus">
@@ -174,7 +173,7 @@
         <div class="mobile-nav-logo">
           <div class="logo">
             <a href="#anasayfa">
-              <img src="./assets/images/logo.webp" alt="AYDOĞDU" width="240" height="156">
+              <img src="./assets/images/logo.webp" alt="AYDOĞDU" width="184" height="120">
             </a>
           </div>
         </div>
@@ -271,7 +270,7 @@
         <div class="container">
           <div class="row">
             <div class="section-title text-center">
-              <h5>Lezzetlerimiz</h5>
+              <h5 role="none">Lezzetlerimiz</h5>
               <h2 class="display-5 fw-bold">Menümüz</h2>
             </div>
           </div>
@@ -348,27 +347,27 @@ Döner</h3>
               </div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Porsiyon</h5><p>110 gr</p></div>
+              <div class="item-left"><h5 aria-level="4">Porsiyon</h5><p>110 gr</p></div>
               <div class="item-right"><span class="item-price">430 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Pilav Üstü</h5><p>110 gr</p></div>
+              <div class="item-left"><h5 aria-level="4">Pilav Üstü</h5><p>110 gr</p></div>
               <div class="item-right"><span class="item-price">490 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>1,5 Porsiyon</h5><p>150 gr</p></div>
+              <div class="item-left"><h5 aria-level="4">1,5 Porsiyon</h5><p>150 gr</p></div>
               <div class="item-right"><span class="item-price">590 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Yarım Döner</h5><p>70 gr</p></div>
+              <div class="item-left"><h5 aria-level="4">Yarım Döner</h5><p>70 gr</p></div>
               <div class="item-right"><span class="item-price">290 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Dürüm Döner</h5><p>90 gr</p></div>
+              <div class="item-left"><h5 aria-level="4">Dürüm Döner</h5><p>90 gr</p></div>
               <div class="item-right"><span class="item-price">350 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Üç Çeyrek Döner</h5><p>90 gr</p></div>
+              <div class="item-left"><h5 aria-level="4">Üç Çeyrek Döner</h5><p>90 gr</p></div>
               <div class="item-right"><span class="item-price">350 ₺</span></div>
             </div>
           </div>
@@ -404,55 +403,55 @@ Günün Yemekleri</h3>
             </div>
             <div class="price-header"><span>Porsiyon / Yarım Porsiyon</span></div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Çorbalar</h5><p>Mercimek, ezogelin, tavuk suyu, yayla, sebze · Paket servise +10 ₺ ilave edilir</p></div>
+              <div class="item-left"><h5 aria-level="4">Çorbalar</h5><p>Mercimek, ezogelin, tavuk suyu, yayla, sebze · Paket servise +10 ₺ ilave edilir</p></div>
               <div class="item-right"><span class="item-price">120 / 90 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Kelle Paça</h5><p>Perşembe hariç her gün</p></div>
+              <div class="item-left"><h5 aria-level="4">Kelle Paça</h5><p>Perşembe hariç her gün</p></div>
               <div class="item-right"><span class="item-price">280 / 200 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>İşkembe</h5><p>Yalnızca Perşembe</p></div>
+              <div class="item-left"><h5 aria-level="4">İşkembe</h5><p>Yalnızca Perşembe</p></div>
               <div class="item-right"><span class="item-price">250 / 180 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Sade Et Yemekleri</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Sade Et Yemekleri</h5><p></p></div>
               <div class="item-right"><span class="item-price">390 / 280 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Sebzeli Et Yemekleri</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Sebzeli Et Yemekleri</h5><p></p></div>
               <div class="item-right"><span class="item-price">330 / 220 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Köfte Yemekleri</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Köfte Yemekleri</h5><p></p></div>
               <div class="item-right"><span class="item-price">300 / 220 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Tavuk Yemekleri</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Tavuk Yemekleri</h5><p></p></div>
               <div class="item-right"><span class="item-price">290 / 200 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Sebze Yemekleri</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Sebze Yemekleri</h5><p></p></div>
               <div class="item-right"><span class="item-price">250 / 180 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Kuru Fasulye / Nohut</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Kuru Fasulye / Nohut</h5><p></p></div>
               <div class="item-right"><span class="item-price">210 / 130 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Kıymalı Yemekler</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Kıymalı Yemekler</h5><p></p></div>
               <div class="item-right"><span class="item-price">280 / 170 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Dolma Yemekleri</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Dolma Yemekleri</h5><p></p></div>
               <div class="item-right"><span class="item-price">280 / 170 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Pilav – Makarna</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Pilav – Makarna</h5><p></p></div>
               <div class="item-right"><span class="item-price">120 / 90 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Kuzu İncik</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Kuzu İncik</h5><p></p></div>
               <div class="item-right"><span class="item-price">680 ₺</span></div>
             </div>
           </div>
@@ -484,15 +483,15 @@ Yanındakiler</h3>
               </div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Salatalar</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Salatalar</h5><p></p></div>
               <div class="item-right"><span class="item-price">120 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Yoğurt – Cacık</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Yoğurt – Cacık</h5><p></p></div>
               <div class="item-right"><span class="item-price">120 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Bardak Yoğurt</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Bardak Yoğurt</h5><p></p></div>
               <div class="item-right"><span class="item-price">60 ₺</span></div>
             </div>
           </div>
@@ -523,19 +522,19 @@ Yanındakiler</h3>
               </div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Meşrubatlar</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Meşrubatlar</h5><p></p></div>
               <div class="item-right"><span class="item-price">70 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Açık Ayran – Komposto</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Açık Ayran – Komposto</h5><p></p></div>
               <div class="item-right"><span class="item-price">70 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Su</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Su</h5><p></p></div>
               <div class="item-right"><span class="item-price">20 ₺</span></div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Soda</h5><p></p></div>
+              <div class="item-left"><h5 aria-level="4">Soda</h5><p></p></div>
               <div class="item-right"><span class="item-price">30 ₺</span></div>
             </div>
           </div>
@@ -553,7 +552,7 @@ Tatlılar</h3>
               </div>
             </div>
             <div class="item-wrapper d-flex justify-content-between">
-              <div class="item-left"><h5>Günlük Tatlı</h5><p>Sütlaç, Kemalpaşa, Kadayıf, Revani, Kazandibi, Supangle</p></div>
+              <div class="item-left"><h5 aria-level="4">Günlük Tatlı</h5><p>Sütlaç, Kemalpaşa, Kadayıf, Revani, Kazandibi, Supangle</p></div>
               <div class="item-right"><span class="item-price">130 ₺</span></div>
             </div>
           </div>
@@ -601,7 +600,7 @@ Tatlılar</h3>
       <section id="hikayemiz" class="py-5">
         <div class="container" style="max-width:760px;">
           <div class="section-title text-center mb-4">
-            <h5>1987'den Beri</h5>
+            <h5 role="none">1987'den Beri</h5>
             <h2 class="display-6 fw-bold">Hikâyemiz</h2>
           </div>
           <div class="story-body">
@@ -629,7 +628,7 @@ Samimi esnaflık.</p>
             <!-- Map LEFT -->
             <div class="col-lg-7">
               <h2 class="display-6 fw-bold mb-4">Konumumuz</h2>
-              <iframe src="https://www.google.com/maps?q=Aydo%C4%9Fdu+2+Lokantas%C4%B1,+%C4%B0stanbul&z=17&output=embed"
+              <iframe title="Aydoğdu 2 Lokantası konumu (Google Haritalar)" src="https://www.google.com/maps?q=Aydo%C4%9Fdu+2+Lokantas%C4%B1,+%C4%B0stanbul&z=17&output=embed"
                 width="100%" height="400" style="border:0;border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <!-- Contact Info RIGHT -->
@@ -697,7 +696,7 @@ Samimi esnaflık.</p>
               <div class="col-lg-6 px-0">
                 <div class="logo">
                   <a href="#anasayfa">
-                    <img src="./assets/images/logo.webp" alt="AYDOĞDU" width="240" height="156">
+                    <img src="./assets/images/logo.webp" alt="AYDOĞDU" width="184" height="120">
                   </a>
                 </div>
               </div>
