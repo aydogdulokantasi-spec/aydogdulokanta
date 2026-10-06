@@ -622,6 +622,56 @@ Tatlılar</h3>
         </div>
       </section>
 
+      <!-- ===== Lezzetin Peşinde (YouTube, Orçun Oran) — tıklayınca yüklenen video ===== -->
+      <section id="lezzetin-pesinde" class="py-5" style="background:#F8F6F2;border-top:3px solid var(--secondary-color);">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-7">
+              <a class="yt-kapak" href="https://www.youtube.com/watch?v=B8NWLDZg6eE&amp;t=369s" target="_blank" rel="noopener"
+                 data-yt="B8NWLDZg6eE" data-bas="369" data-bit="766"
+                 aria-label="Lezzetin Peşinde – Aydoğdu 2 Lokantası bölümünü oynat (YouTube)">
+                <img src="https://i.ytimg.com/vi/B8NWLDZg6eE/hqdefault.jpg" alt="Lezzetin Peşinde – Bostancı Oto Sanayi videosunun kapak görseli"
+                     width="480" height="360" loading="lazy" decoding="async">
+                <span class="yt-oynat" aria-hidden="true"><svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#c00"/><path d="M45 24 27 14v20z" fill="#fff"/></svg></span>
+                <span class="yt-sure">06:09 – 12:46</span>
+              </a>
+              <p class="small text-muted mt-2 mb-0">Oynat'a bastığınızda video YouTube'dan yüklenir ve YouTube çerezleri kullanılabilir. Ayrıntı: <a href="./gizlilik.html#cerezler" style="color:inherit;">Çerez Politikası</a>.</p>
+            </div>
+            <div class="col-lg-5">
+              <p class="text-uppercase fw-bold small mb-1" style="color:var(--secondary-color);letter-spacing:.06em;">Hakkımızda çekilenler</p>
+              <h2 class="h3 fw-bold mb-3" style="color:var(--primary-color);">Lezzetin Peşinde'de Aydoğdu 2</h2>
+              <p class="mb-3">YouTube'daki <b>Lezzetin Peşinde</b> serisinin “Bostancı Oto Sanayi” bölümünde lokantamıza da uğradılar:
+                günün yemeklerinden tavuklu tava ve arpa pilavı, et döner, ayran ve tatlılarımızı denediler.</p>
+              <div class="yt-puan mb-3">
+                <div><span>Ambiyans</span><b>8</b></div>
+                <div><span>Lezzet</span><b>8,5</b></div>
+                <div><span>Fiyat / performans</span><b>8</b></div>
+                <div class="yt-puan-toplam"><span>Genel</span><b>8,2</b></div>
+              </div>
+              <p class="small text-muted mb-3">Video ve değerlendirme <a href="https://www.youtube.com/@oranorcun" target="_blank" rel="noopener" style="color:inherit;">Orçun Oran</a>'a aittir;
+                kanalın açıklamasına göre reklam veya işbirliği değildir.</p>
+              <a href="https://www.youtube.com/watch?v=B8NWLDZg6eE&amp;t=369s" target="_blank" rel="noopener" class="btn fw-bold px-4" style="background:var(--primary-color);color:#fff;border-radius:50px;">YouTube'da izleyin</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <style>
+        .yt-kapak{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;border-radius:10px;background:#111;box-shadow:0 6px 20px rgba(0,0,0,.12)}
+        .yt-kapak img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+        .yt-kapak:hover img,.yt-kapak:focus-visible img{transform:scale(1.03)}
+        .yt-kapak:focus-visible{outline:3px solid var(--secondary-color);outline-offset:3px}
+        .yt-oynat{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);filter:drop-shadow(0 2px 6px rgba(0,0,0,.4))}
+        .yt-sure{position:absolute;right:10px;bottom:10px;background:rgba(0,0,0,.75);color:#fff;font-size:13px;padding:3px 8px;border-radius:4px}
+        .yt-kapak iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+        .yt-puan{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}
+        .yt-puan div{background:#fff;border:1px solid #eadfcd;border-radius:8px;padding:8px 4px}
+        .yt-puan span{display:block;font-size:12px;color:#5c636a;line-height:1.2;min-height:2.4em}
+        .yt-puan b{display:block;font-size:22px;color:var(--primary-color)}
+        .yt-puan .yt-puan-toplam{background:var(--primary-color);border-color:var(--primary-color)}
+        .yt-puan .yt-puan-toplam span,.yt-puan .yt-puan-toplam b{color:#fff}
+        @media (max-width:400px){.yt-puan{grid-template-columns:repeat(2,1fr)}}
+      </style>
+
       <!-- ===== İletişim & Konum ===== -->
       <section id="iletisim" class="contact-us pt-5 mb-0 pb-5">
         <div class="container">
@@ -780,6 +830,30 @@ Tatlılar</h3>
         }
         if (document.readyState === 'complete') setTimeout(baslat, 800);
         else window.addEventListener('load', function () { setTimeout(baslat, 800); });
+      })();
+    </script>
+
+    <!-- YouTube: tıklanana kadar YouTube'dan hiçbir şey yüklenmez (çerez + hız). Yalnız 06:09–12:46 oynar. -->
+    <script>
+      (function () {
+        document.querySelectorAll('.yt-kapak').forEach(function (k) {
+          k.addEventListener('click', function (e) {
+            if (e.ctrlKey || e.metaKey || e.shiftKey) return; // yeni sekmede açmak isteyene dokunma
+            e.preventDefault();
+            if (k.querySelector('iframe')) return;
+            var f = document.createElement('iframe');
+            f.src = 'https://www.youtube-nocookie.com/embed/' + k.dataset.yt +
+              '?start=' + k.dataset.bas + '&end=' + k.dataset.bit + '&autoplay=1&rel=0&playsinline=1';
+            f.title = 'Lezzetin Peşinde – Aydoğdu 2 Lokantası (YouTube)';
+            f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+            f.allowFullscreen = true;
+            f.referrerPolicy = 'strict-origin-when-cross-origin';
+            k.innerHTML = '';
+            k.removeAttribute('href');
+            k.appendChild(f);
+            if (typeof gtag === 'function') { gtag('event', 'video_oynat', { video: 'lezzetin_pesinde', kaynak: 'youtube' }); }
+          });
+        });
       })();
     </script>
 
